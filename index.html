@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Café e Hobbies</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <!-- reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+
+    <!-- ====== CABEÇALHO ====== -->
+    <header class="top-header">
+        <h1>Entre Café e Hobbies</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ====== SESSÃO SOBRE ====== -->
+    <section id="sobre" class="secao">
+        <h2>Sobre Mim</h2>
+        <p>
+            Sou apaixonado por estudar Anatomia Humana e pretendo me formar em Medicina.
+            Tenho interesse especial por áreas como:
+        </p>
+
+        <ul>
+            <li>Crânio Humano</li>
+            <li>Sistema Cardiovascular</li>
+        </ul>
+
+        <img src="img/minhafoto.png" alt="Crânio humano" class="imagem-ilustrativa">
+    </section>
+
+    <!-- ====== SESSÃO HOBBIES ====== -->
+    <section id="hobbies" class="secao">
+        <h2>Hobbies</h2>
+
+        <div class="hobby-card">
+            <img src="img/foto.png" alt="Vôlei" class="imagem-ilustrativa">
+            <div>
+                <h3>Vôlei</h3>
+                <ul>
+                    <li>1º lugar na macrorregional</li>
+                    <li>2º lugar na microregional</li>
+                    <li>Time: NQ – Narciso de Queirós</li>
+                    <li>Ponteiro do profissional</li>
+                    <li>Profissional em Itabirito</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FORMULÁRIO CONTATO ====== -->
+    <section id="contato" class="secao contato">
+
+        <h2>Entre em Contato</h2>
+
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <textarea name="message" placeholder="Digite sua mensagem..." required></textarea>
+
+            <!-- reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="6Ld-cxksAAAAADyuiDCvhXuL4QG-3Tm7ziyQHe5D"></div>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+
+    </section>
+
+    <!-- ====== RODAPÉ ====== -->
+    <footer>
+        <p>@fael.da31</p>
+        <p>(31) 98469-5084</p>
+        <p>rafaelsilvasb244@gmail.com</p>
+    </footer>
+
+    <script>
+        // Inicializa EmailJS
+        emailjs.init("itciyfhOaxL9EcCzg");
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
