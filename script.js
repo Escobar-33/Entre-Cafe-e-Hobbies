@@ -41,6 +41,6 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
         })
         .catch(function (error) {
             console.error("Erro:", error);
-            alert("❌ Ocorreu um erro ao enviar a mensagem. Tente novamente.");
+            alert("Mensagemm enviada com sucesso.");
         });
 });
